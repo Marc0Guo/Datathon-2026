@@ -2,6 +2,20 @@
 
 Using EPA AQI data, we apply machine learning and data visualization to uncover hidden air quality risk patterns across U.S. counties.
 
+## Repository Contents
+
+- `data_cleaning.ipynb`  
+  Loads, merges, and cleans raw EPA AQI by county data. Handles missing values, invalid ratios, feature normalization, and constructs derived indicators used across all downstream analyses.
+
+- `high_risk_cluster.ipynb`  
+  Uses K-Means clustering to group counties based on long-term air quality profiles.  
+  Focuses on exposure frequency, pollutant composition, and historical intensity to identify high-risk air quality regimes.
+
+- `extreme_event_early_warning.ipynb`  
+  Develops an XGBoost-based early warning model for future extreme AQI events using historical trends and event recency features.  
+  Emphasizes interpretability and practical risk signals rather than short-term forecasting accuracy.
+
+
 ## 🔗 Project Links
 
 - **🌐 Website**: [https://runa-1117.github.io/datathon-2026/](https://runa-1117.github.io/datathon-2026/)
